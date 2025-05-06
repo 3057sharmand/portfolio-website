@@ -1,0 +1,126 @@
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    .hero-section {
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .timeline-item {
+        padding: 1rem;
+    }
+    
+    /* Skills visualization for mobile */
+    .skills-visual {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .skills-visual img {
+        max-height: 300px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero-section {
+        padding-top: 70px;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero-section {
+        padding-top: 80px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Custom responsive classes */
+.img-fluid-sm {
+    max-width: 75%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .img-fluid-sm {
+        max-width: 100%;
+    }
+}
+
+/* Responsive text adjustments */
+@media (max-width: 576px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.8rem !important;
+    }
+
+    h3 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+    section {
+        padding: 50px 0;
+    }
+
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Responsive form elements */
+@media (max-width: 576px) {
+    .form-control {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+} 
