@@ -1,0 +1,725 @@
+/* Global Styles */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+    background-color: var(--primary-color) !important; /* Blue background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #ffffff !important; /* White text for brand */
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: var(--transition);
+    color: rgba(255, 255, 255, 0.9) !important; /* White text for nav links */
+}
+
+.nav-link:hover {
+    color: #ffffff !important; /* Brighter white on hover */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Glow effect on hover */
+}
+
+/* Navbar toggler for mobile */
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* Make the hamburger icon white */
+}
+
+/* When the navbar is collapsed on mobile */
+.navbar-collapse {
+    background-color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../assets/images/jsb-background.jpg') center/cover no-repeat;
+    filter: none;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    padding-top: 80px;
+    width: 100%;
+}
+
+.hero-section h1, .hero-section .lead {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Section Styles */
+section {
+    padding: 80px 0;
+}
+
+/* About Section with custom background */
+#about {
+    background-color: #FFDDAB;
+}
+
+/* Education Section with custom background */
+#education {
+    background-color: #F3D7DD;
+}
+
+/* Projects Section with custom background */
+#projects {
+    background-color: #FFDDAB;
+}
+
+/* Skills Section with custom background */
+#skills {
+    background-color: #F3D7DD;
+}
+
+/* Achievements Section with custom background */
+#achievements {
+    background-color: #FFDDAB;
+}
+
+/* Contact Section with custom background */
+#contact {
+    background-color: #F3D7DD;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn {
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+}
+
+/* Skills */
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-name {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+/* Skills Visualizations */
+.skills-visual {
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.skills-visual img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.skills-visual:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.skills-visual:hover img {
+    transform: scale(1.02);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-item {
+    padding: 2rem;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Contact Form */
+.contact-form {
+    background: #fff;
+    padding: 1.8rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form .form-control {
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.contact-form textarea.form-control {
+    min-height: 105px;
+}
+
+/* Contact Form button */
+.contact-form .btn-primary {
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+/* WhatsApp specific button styling - Using ID for higher specificity */
+#submit-whatsapp {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+#submit-whatsapp:hover {
+    background-color: #FFD700 !important; /* Yellow color on hover */
+    border-color: #FFD700 !important;
+    color: #000 !important; /* Black text for better contrast on yellow */
+}
+
+#submit-whatsapp:active,
+#submit-whatsapp:focus {
+    background-color: #E6C200 !important; /* Darker yellow when pressed */
+    border-color: #E6C200 !important;
+    color: #000 !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.5) !important;
+}
+
+/* Footer */
+footer {
+    background: var(--dark-color);
+}
+
+.social-links a {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Education Section */
+#education {
+    padding: 40px 0;
+}
+
+/* Education Cards */
+.education-card {
+    background: transparent;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    min-height: 180px; /* Reduced from 300px */
+}
+
+.education-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../assets/images/jsb-pic.webp') center/cover no-repeat;
+    filter: none;
+    opacity: 0.9;
+    z-index: 0;
+}
+
+.education-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+.education-card-content {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Education Content Styles */
+.education-location {
+    color: #2196F3;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+}
+
+.education-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.education-school {
+    color: #444;
+    margin-bottom: 8px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.education-year {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.education-card p {
+    color: #555;
+    line-height: 1.4;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.education-link {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.education-link:hover {
+    background: #2196F3;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+/* JSB Specific Card */
+.education-card.jsb-card::before {
+    background: url('../assets/images/jsb-pic.webp') center/cover no-repeat;
+    filter: none;
+    opacity: 0.9;
+}
+
+.education-card.jsb-card::after {
+    display: none;
+}
+
+.education-card.jsb-card .education-card-content {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+/* Sri Chaitanya Specific Card */
+.education-card.srichaitanya::before {
+    background: url('../assets/images/rtb-campus-vishakhapatnam.webp') center/cover no-repeat;
+    filter: none;
+    opacity: 0.9;
+}
+
+.education-card.srichaitanya::after {
+    display: none;
+}
+
+.education-card.srichaitanya .education-card-content {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+/* LNMU Specific Card */
+.education-card.lnmu-card::before {
+    background: url('../assets/images/lmnu-collage.jpg') center/cover no-repeat;
+    filter: none;
+    opacity: 0.9;
+}
+
+.education-card.lnmu-card::after {
+    display: none;
+}
+
+.education-card.lnmu-card .education-card-content {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+/* PPJSV Specific Card */
+.education-card.PPJSV::before {
+    background: url('../assets/images/School-Building-Photo-of-ppjsv.jpg') center/cover no-repeat;
+    filter: none;
+    opacity: 0.9;
+}
+
+.education-card.PPJSV::after {
+    display: none;
+}
+
+.education-card.PPJSV .education-card-content {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+/* Project Cards */
+.project-image {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    max-width: 100%;
+    width: auto;
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover {
+    transform: scale(1.0);
+}
+
+/* Used to minimize image rendering cost */
+.card:not(:hover) .project-image {
+    image-rendering: optimizeSpeed;
+}
+
+/* Project card improvements */
+.project-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-item .card-body {
+    padding: 1.5rem;
+}
+
+.project-item .card-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.project-item p {
+    margin-bottom: 0.7rem;
+}
+
+/* Learning Projects Table */
+.table-responsive {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Status badges */
+.badge {
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 50px;
+}
+
+.badge.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+.badge.bg-secondary {
+    background-color: #6c757d !important;
+    color: white !important;
+}
+
+/* Profile Image */
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    object-fit: cover;
+    aspect-ratio: 1/1; /* Perfect circle */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Achievement Icons */
+.achievement-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Achievement Images */
+.achievement-image {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card.h-100 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card.h-100:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Skills Section */
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Contact Section Image */
+.contact-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 35px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: block;
+    margin: 0 auto 2rem;
+    background-color: #d4af37; /* Golden background to match the image */
+}
+
+/* Custom style for contact info */
+.contact-info {
+    text-align: center;
+    background-color: #d4af37; /* Golden background */
+    border-radius: 35px;
+    padding: 2rem;
+    color: #000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-info h4 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.contact-info h3 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.contact-info ul {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contact-info ul li {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.contact-info .fas {
+    font-size: 1.4rem;
+    margin-right: 0.75rem;
+}
+
+/* Contact card image */
+.contact-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1.5rem 0;
+}
+
+.contact-card {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    object-fit: contain;
+    max-height: 420px;
+}
+
+/* WhatsApp buttons */
+.btn-success {
+    background-color: #25D366;
+    border-color: #25D366;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #128C7E;
+    border-color: #128C7E;
+}
+
+/* Contact Form buttons */
+#whatsapp-form .btn {
+    flex: 1 1 auto;
+    font-weight: 600;
+    min-width: 140px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 576px) {
+    .d-flex.flex-wrap.gap-3 {
+        flex-direction: column;
+    }
+    
+    #whatsapp-form .btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+} 

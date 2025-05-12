@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Section</title>
+    <!-- External CSS links removed as they are loaded by index.html -->
+    <style>
+        /* Inline styles for standalone viewing */
+        body {
+            margin: 0; /* Basic reset for standalone view */
+            /* You might want to add a temporary background or basic layout styles */
+            /* if you intend to view this component file directly. */
+        }
+        /* Add any specific styles needed for hero-section if viewed directly */
+        .hero-section {
+            min-height: 100vh; /* Example, ensure it's viewable */
+            background-image: url('../assets/images/jsb-background.jpg'); /* Example path for standalone view */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        .hero-content h1, .hero-content p {
+            color: white; /* Ensure text is visible if background is dark */
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Section Component -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div> <!-- This will be styled by global style.css when in index.html -->
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row min-vh-100 align-items-center">
+                    <div class="col-lg-8 col-md-10">
+                        <h1 class="display-4 fw-bold">Hi, I'm NANDLAL </h1>
+                        <p class="lead">PGDM Graduate from JAIPURIYA SCHOOL OF BUSINESS</p>
+                        <div class="mt-4">
+                            <a href="#contact" class="btn btn-primary me-3">Contact Me</a>
+                            <a href="#projects" class="btn btn-outline-primary">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and other scripts are loaded by index.html when component is injected -->
+</body>
+</html> 

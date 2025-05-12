@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitanya's Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Include Navigation -->
+    <div id="nav-container"></div>
+
+    <!-- Include Home Section -->
+    <div id="home-container"></div>
+
+    <!-- Main Content Sections -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center">
+                        <img src="assets/images/nandlal-profile-picture.jpg.jpg" alt="Profile" class="profile-image">
+                    </div>
+                    <div class="col-md-8">
+                        <p>I am a passionate PGDM graduate with a strong foundation in business management and analytics. My journey in the business world has equipped me with valuable skills in strategic planning, market analysis, and project management.</p>
+                        <p>I thrive on challenges and continuously seek opportunities to learn and grow in the dynamic business environment.</p>
+                        <div class="mt-4 d-flex gap-2">
+                            <a href="assets/docs/chaitanya-cv.pdf" class="btn btn-outline-primary btn-sm" download>Download CV</a>
+                            <a href="https://github.com/3057sharmand/jsb-" target="_blank" class="btn btn-outline-dark btn-sm">
+                                <i class="fab fa-github me-1"></i>Source Code
+                            </a>
+                            <a href="https://www.linkedin.com/in/nandlal-sharma-542349365/" target="_blank" class="btn btn-outline-primary btn-sm">
+                                <i class="fab fa-linkedin-in me-1"></i>LinkedIn
+                            </a>
+                            <a href="https://x.com/Chaitanyajsb" target="_blank" class="btn btn-outline-dark btn-sm">
+                                <i class="fab fa-twitter me-1"></i>X
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-3">
+            <div class="container">
+                <h2 class="section-title mb-3">Education</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="education-card jsb-card">
+                            <div class="education-card-content">
+                                <span class="education-location">Ghaziabad, India</span>
+                                <h3 class="education-title">Post Graduate Diploma in Management</h3>
+                                <p class="education-school">Jaipuria School of Business</p>
+                                <p class="education-year"><i class="far fa-calendar-alt me-2"></i>2025-2027</p>
+                                <p>Specialized in Marketing and Finance with focus on strategic management.</p>
+                                <a href="https://jsb.jaipuria.edu.in/lp/" class="education-link" target="_blank">Visit JSB</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="education-card lnmu-card">
+                            <div class="education-card-content">
+                                <span class="education-location">Bihar, India</span>
+                                <h3 class="education-title">Bachelor of Business Administration</h3>
+                                <p class="education-school">Lalit Narayan Mithila University</p>
+                                <p class="education-year"><i class="far fa-calendar-alt me-2"></i>2019-2023</p>
+                                <p>Major in Business Administration with focus on management principles.</p>
+                                <a href="https://www.lnmu.ac.in/" class="education-link" target="_blank">Visit LNMU</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="education-card srichaitanya">
+                            <div class="education-card-content">
+                                <span class="education-location">Vishakhapatnam, India</span>
+                                <h3 class="education-title">Higher Secondary Education</h3>
+                                <p class="education-school">Sri Chaitanya Junior College RTB</p>
+                                <p class="education-year"><i class="far fa-calendar-alt me-2"></i>2017-2019</p>
+                                <p>Completed higher secondary education with focus on Science.</p>
+                                <a href="https://srichaitanya.net/" class="education-link" target="_blank">Visit Sri Chaitanya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="education-card PPJSV">
+                            <div class="education-card-content">
+                                <span class="education-location">Nainital, India</span>
+                                <h3 class="education-title">Secondary Education</h3>
+                                <p class="education-school">Parwati Prema Jagati Saraswati Vihar</p>
+                                <p class="education-year"><i class="far fa-calendar-alt me-2"></i>2012-2017</p>
+                                <p>Completed secondary education with focus on Science.</p>
+                                <a href="https://ppjsvihar.in/" class="education-link" target="_blank">Visit PPJSV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 project-item" data-category="portfolio">
+                            <img src="assets/images/Personal-Portfolio-Website.jpg" class="project-image" alt="Portfolio Website" width="400" height="250" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Personal Portfolio & Career Branding Platform</h5>
+                                <p class="card-text">To create a dynamic, responsive website for personal branding, showcasing projects, achievements, certifications, and thought leadership.</p>
+                                <p><strong>Tools Used:</strong> HTML, CSS, JavaScript, Canva, Google Analytics 4</p>
+                                <p><strong>Outcome:</strong> Successfully launched a career-focused digital presence, built for scalability as experience grows.</p>
+                                <div class="mt-3">
+                                    <a href="https://github.com/3057sharmand/jsb-" target="_blank" class="btn btn-sm btn-outline-primary">
+                                        <i class="fab fa-github me-2"></i>View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 project-item" data-category="marketing">
+                            <img src="assets/images/Power-BI Retail-Sales-Dashboard.jpg" class="project-image" alt="Power BI Dashboard" width="400" height="250" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Business Intelligence Dashboard – Retail Chain Sales</h5>
+                                <p class="card-text">Simulated sales data for a multi-location retail business to derive insights on revenue, location performance, and inventory efficiency.</p>
+                                <p><strong>Tools Used:</strong> Microsoft Power BI, Excel, DAX, Power Query</p>
+                                <p><strong>Outcome:</strong> Demonstrated how BI dashboards help decision-makers optimize marketing and supply chain strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 project-item" data-category="certification">
+                            <img src="assets/images/Salesforce-CRM-Workflow.png" class="project-image" alt="Salesforce CRM Workflow" width="400" height="250" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Salesforce CRM Workflow – Sales Funnel Optimization</h5>
+                                <p class="card-text">Created a CRM model simulating the sales process of a B2B SaaS company.</p>
+                                <p><strong>Tools Used:</strong> Salesforce Sales Cloud, Lucidchart</p>
+                                <p><strong>Outcome:</strong> Showed how Salesforce can increase sales team efficiency and conversion rate through automated pipelines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 project-item" data-category="marketing">
+                            <img src="assets/images/Email-Marketing-AB-Campaign.png" class="project-image" alt="Email Marketing" width="400" height="250" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Email Marketing with A/B Testing – EdTech Brand</h5>
+                                <p class="card-text">Designed and tested email subject lines and layout to improve open rates for an imaginary EdTech course launch.</p>
+                                <p><strong>Tools Used:</strong> Mailchimp, Canva, Google Sheets</p>
+                                <p><strong>Outcome:</strong> Achieved a simulated open rate improvement of 22% and CTR improvement of 14% between variants.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 project-item" data-category="sales">
+                            <img src="assets/images/B2B-Sales-Strategy-Pitch-Deck.png" class="project-image" alt="Sales Strategy" width="400" height="250" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">B2B Sales Strategy Deck – Digital Product Pitch</h5>
+                                <p class="card-text">Prepared a sales pitch for a hypothetical SaaS analytics platform targeted at mid-size retailers.</p>
+                                <p><strong>Tools Used:</strong> PowerPoint, ChatGPT, Google Sheets</p>
+                                <p><strong>Outcome:</strong> Developed client-facing presentation with structured sales storytelling and consultative selling approach.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 project-item" data-category="social">
+                            <img src="assets/images/Social-Media-Analytics-for-FMCG-Brand.png" class="project-image" alt="Social Media Analytics" width="400" height="250" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Social Media Analytics & Content Plan – FMCG Brand</h5>
+                                <p class="card-text">Created a monthly content strategy and KPIs dashboard for a popular FMCG snack brand.</p>
+                                <p><strong>Tools Used:</strong> Meta Ads Library, Canva, Notion, Excel</p>
+                                <p><strong>Outcome:</strong> Gained hands-on knowledge of aligning digital marketing with business goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Future Project Pipeline Section -->
+                <h3 class="mb-4 mt-5">Future Project Pipeline (Learning in Progress)</h3>
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <img src="assets/images/Future-Project-Pipeline-Composite-Tile.png" class="card-img-top" alt="Future Projects Pipeline" style="height: 300px; object-fit: cover;" width="1200" height="300" loading="lazy">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead class="table-primary">
+                                            <tr>
+                                                <th>Project Name</th>
+                                                <th>Tools Learning</th>
+                                                <th>Status</th>
+                                                <th>Objective</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tableau Dashboard for E-Commerce KPIs</td>
+                                                <td>Tableau Public, Excel</td>
+                                                <td><span class="badge bg-warning text-dark">In Progress</span></td>
+                                                <td>Visualize purchase funnel, returns, bounce rates</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Google Looker Studio for Marketing Reports</td>
+                                                <td>Looker Studio, GA4, Sheets</td>
+                                                <td><span class="badge bg-secondary">Planned</span></td>
+                                                <td>Build automated report dashboards</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Python for Business Analytics</td>
+                                                <td>Python (Pandas, Matplotlib)</td>
+                                                <td><span class="badge bg-info">Learning</span></td>
+                                                <td>Automate data analysis workflows</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ChatGPT Prompt Engineering for Sales</td>
+                                                <td>OpenAI API, Zapier, Sheets</td>
+                                                <td><span class="badge bg-light text-dark">Conceptual</span></td>
+                                                <td>Build an AI assistant for sales email writing</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="skills-visual text-center">
+                            <!-- Placeholder for the bar chart skills visualization -->
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%23f8f9fa'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='20' fill='%23666'%3ESkills Bar Chart%3C/text%3E%3Ctext x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%23888'%3ESave the first image as 'SKILLS.jpg' in assets/images folder%3C/text%3E%3C/svg%3E" alt="Skills Bar Chart" class="img-fluid rounded shadow" id="skills-barchart">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="skills-visual text-center">
+                            <!-- Placeholder for the radar chart skills visualization -->
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%23f8f9fa'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='20' fill='%23666'%3ESkills Radar Chart%3C/text%3E%3Ctext x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%23888'%3ESave the second image as 'skill-2.jpg' in assets/images folder%3C/text%3E%3C/svg%3E" alt="Skills Radar Chart" class="img-fluid rounded shadow" id="skills-radarchart">
+                        </div>
+                            </div>
+                        </div>
+                
+                <!-- Instructions for updating the images -->
+                <div class="row mt-3" id="skills-instructions">
+                    <div class="col-12 alert alert-info">
+                        <p class="mb-0"><strong>Note:</strong> Please save the skills visualization images from your message as follows:</p>
+                        <ol>
+                            <li>Save the bar chart image as "SKILLS.jpg" in the assets/images folder</li>
+                            <li>Save the radar chart image as "skill-2.jpg" in the assets/images folder</li>
+                        </ol>
+                        <p class="mb-0">Once uploaded, this notice will automatically disappear.</p>
+                    </div>
+                </div>
+                
+                <!-- Script to check if images exist and hide instructions -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const skillsInstructions = document.getElementById('skills-instructions');
+                        const skillsBarchartImg = document.getElementById('skills-barchart'); // Left image
+                        const skillsRadarchartImg = document.getElementById('skills-radarchart'); // Right image
+
+                        // Debounce utility
+                        function debounce(func, wait) {
+                            let timeout;
+                            return function executedFunction(...args) {
+                                const later = () => {
+                                    clearTimeout(timeout);
+                                    func(...args);
+                                };
+                                clearTimeout(timeout);
+                                timeout = setTimeout(later, wait);
+                            };
+                        }
+
+                        function equalizeImageHeights() {
+                            if (skillsBarchartImg && skillsRadarchartImg) {
+                                // Allow left image to set its natural height based on its width and aspect ratio
+                                skillsBarchartImg.style.height = 'auto';
+                                
+                                // Use requestAnimationFrame to ensure calculations are done after layout updates
+                                requestAnimationFrame(() => {
+                                    const leftImageComputedStyle = window.getComputedStyle(skillsBarchartImg);
+                                    const leftImageHeight = parseFloat(leftImageComputedStyle.height);
+
+                                    if (leftImageHeight > 0) {
+                                        skillsRadarchartImg.style.height = leftImageHeight + 'px';
+                                    } else {
+                                        // Fallback if left image height isn't determined (e.g., hidden or not loaded yet)
+                                        // This function should ideally be called when images are ready.
+                                    }
+                                });
+                            }
+                        }
+
+                        // Function to handle when actual images are loaded
+                        let realImagesActuallyLoaded = 0;
+                        const totalRealImagesToLoad = 2;
+                        function onRealImageLoad() {
+                            realImagesActuallyLoaded++;
+                            if (realImagesActuallyLoaded >= totalRealImagesToLoad) {
+                                equalizeImageHeights();
+                            }
+                        }
+                        
+                        // Function to check if an image URL is valid and loads
+                        function checkImage(url) {
+                            return new Promise(function(resolve, reject) {
+                                var img = new Image();
+                                img.onload = function() { resolve(true); };
+                                img.onerror = function() { reject(false); }; // Image failed to load
+                                img.src = url;
+                            });
+                        }
+                        
+                        // Check if both skill images exist in assets
+                        Promise.all([
+                            checkImage('assets/images/SKILLS.jpg'),
+                            checkImage('assets/images/skill-2.jpg')
+                        ]).then(function(results) {
+                            // Both images exist
+                            skillsInstructions.style.display = 'none';
+
+                            // Assign onload handlers BEFORE setting src
+                            skillsBarchartImg.onload = onRealImageLoad;
+                            skillsRadarchartImg.onload = onRealImageLoad;
+                            
+                            skillsBarchartImg.src = 'assets/images/SKILLS.jpg';
+                            skillsRadarchartImg.src = 'assets/images/skill-2.jpg';
+
+                            // Handle cases where images might be already cached and .onload doesn't fire reliably
+                            // We check .complete after setting src. If true, manually call the handler.
+                            // Note: The counter `realImagesActuallyLoaded` prevents multiple calls to equalizeImageHeights
+                            // if both .complete are true and onload also fires.
+                            if (skillsBarchartImg.complete) { onRealImageLoad(); }
+                            if (skillsRadarchartImg.complete) { onRealImageLoad(); }
+
+                        }).catch(function(error) {
+                            // One or both images do not exist, using placeholders
+                            skillsInstructions.style.display = 'block';
+                            // For SVG placeholders, dimensions should be available after DOMContentLoaded and initial render.
+                            // Call equalizeImageHeights directly.
+                            equalizeImageHeights(); 
+                        });
+
+                        // Add resize listener to readjust heights if window size changes
+                        window.addEventListener('resize', debounce(equalizeImageHeights, 150));
+                    });
+                </script>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Achievements</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="assets/images/JSB-Ghaziabad.jpg" class="card-img-top achievement-image" alt="JSB Ghaziabad">
+                            <div class="card-body">
+                                <h5 class="card-title">Admission to PGDM, JSB Ghaziabad (2025–27)</h5>
+                                <p class="card-text">Selected for a 2-year PGDM in Marketing & finance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="assets/images/Fundamentals-of-Digital-Marketing.jpg" class="card-img-top achievement-image" alt="Digital Marketing Certification">
+                            <div class="card-body">
+                                <h5 class="card-title">Completed "Fundamentals of Digital Marketing" by Google</h5>
+                                <p class="card-text">Learned SEO, SEM, content marketing, and analytics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="assets/images/JSB-Orientation.jpg" class="card-img-top achievement-image" alt="JSB Orientation">
+                            <div class="card-body">
+                                <h5 class="card-title">Participated in JSB Orientation & Ice-Breaker Activities</h5>
+                                <p class="card-text">Engaged with peers, built networks, and participated in team activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-4">
+            <div class="container">
+                <h2 class="section-title mb-3">Contact Me</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="contact-image-container">
+                            <img src="assets/images/imnandlal-contact.png" alt="Contact Card" class="img-fluid contact-card">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form id="whatsapp-form" class="contact-form h-100" onsubmit="return false;">
+                            <div class="mb-3">
+                                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" id="mobile" class="form-control" placeholder="Your Mobile Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3">
+                                <button type="button" id="submit-whatsapp" class="btn btn-primary">Send via WhatsApp</button>
+                            </div>
+                        </form>
+                        
+                        <!-- WhatsApp Fallback Script -->
+                        <script>
+                            document.getElementById('submit-whatsapp').onclick = function() {
+                                var name = document.getElementById('name').value;
+                                var email = document.getElementById('email').value;
+                                var mobile = document.getElementById('mobile').value;
+                                var message = document.getElementById('message').value;
+                                
+                                if(name && email && mobile && message) {
+                                    var text = "Name: " + encodeURIComponent(name) + 
+                                             "%0AEmail: " + encodeURIComponent(email) + 
+                                             "%0AMobile: " + encodeURIComponent(mobile) + 
+                                             "%0AMessage: " + encodeURIComponent(message);
+                                    
+                                    // Mobile detection
+                                    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                    
+                                    if (isMobile) {
+                                        // Mobile users - use WhatsApp app URL
+                                        window.location.href = 'whatsapp://send?phone=919123415695&text=' + text;
+                                    } else {
+                                        // Desktop users - use web.whatsapp.com
+                                        window.open('https://wa.me/919123415695?text=' + text, '_blank');
+                                    }
+                                    
+                                    document.getElementById('whatsapp-form').reset();
+                                } else {
+                                    alert('Please fill out all fields');
+                                }
+                                return false;
+                            };
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 NANDLAL SHARMA All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links text-md-end">
+                        <a href="https://www.linkedin.com/in/nandlal-sharma-542349365/" target="_blank" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/3057sharmand/jsb-" target="_blank" class="text-white me-2"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/Chaitanyajsb" target="_blank" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    
+    <!-- Image optimization script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Convert all project images to lower quality when not in view
+            const projectImages = document.querySelectorAll('.project-image');
+            
+            // Create an intersection observer
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // When image comes into view, set higher quality
+                        entry.target.style.imageRendering = 'auto';
+                        // Preload the next images that might come into view
+                        preloadNextImages(entry.target);
+                    } else {
+                        // When image is out of view, set to lower quality to save memory
+                        entry.target.style.imageRendering = 'optimizeSpeed';
+                    }
+                });
+            }, {
+                rootMargin: '100px', // Start loading a bit before the image comes into view
+                threshold: 0.1 // Trigger when at least 10% of the image is visible
+            });
+            
+            // Observe all project images
+            projectImages.forEach(img => {
+                observer.observe(img);
+            });
+            
+            // Function to preload the next couple of images
+            function preloadNextImages(currentImg) {
+                const card = currentImg.closest('.card');
+                const nextCard = card.nextElementSibling;
+                const nextNextCard = nextCard ? nextCard.nextElementSibling : null;
+                
+                if (nextCard) {
+                    const nextImg = nextCard.querySelector('.project-image');
+                    if (nextImg && nextImg.getAttribute('loading') === 'lazy') {
+                        nextImg.setAttribute('loading', 'eager');
+                    }
+                }
+                
+                if (nextNextCard) {
+                    const nextNextImg = nextNextCard.querySelector('.project-image');
+                    if (nextNextImg && nextNextImg.getAttribute('loading') === 'lazy') {
+                        // Create a preload hint but keep it lazy
+                        const link = document.createElement('link');
+                        link.rel = 'preload';
+                        link.as = 'image';
+                        link.href = nextNextImg.src;
+                        document.head.appendChild(link);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
